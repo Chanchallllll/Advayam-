@@ -1,0 +1,290 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+
+  --advayam-bg: #000000;
+  --advayam-text: #ffffff;
+  --advayam-card: #111111;
+  --advayam-border: #2a2a2a;
+  --advayam-orange: #d95b00;
+  --advayam-blue: #be5209;
+  --advayam-black: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/*@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}*/
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --advayam-bg: #000000;
+  --advayam-blue: #be5209;
+  --advayam-black: #ffffff;
+}
+
+body {
+  background: var(--advayam-bg);
+  color: var(--advayam-black);
+}
+
+.advayam-page-bg {
+  background-color: #000000;
+  background-image: url("/patterns/wave-left.svg"), url("/patterns/wave-right.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 130px, right 360px;
+  background-size: 520px auto, 600px auto;
+  background-blend-mode: multiply;
+}
+
+@media (max-width: 768px) {
+  .advayam-page-bg {
+    background-size:
+      320px auto,
+      360px auto;
+    background-position:
+      left 160px,
+      right 600px;
+  }
+}
+
+@font-face {
+  font-family: "Druk Trial";
+  src: url("/fonts/Druk-Bold-Trial.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-druk {
+  font-family: "Druk Trial", sans-serif;
+}
+
+.font-satoshi {
+  font-family: "Satoshi", sans-serif;
+}
+
+.font-jakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.glass-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+
+  mask-image: radial-gradient(circle at center, black 45%, transparent 80%);
+
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    black 45%,
+    transparent 80%
+  );
+}
+
+.blob {
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  left: 50%;
+  top: 50%;
+
+  margin-left: -150px;
+  margin-top: -150px;
+
+  border-radius: 50%;
+  background: #d89263;
+
+  filter: blur(90px);
+
+  pointer-events: none;
+}
+
+/* Grid */
+
+.tiles-grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  z-index: 2;
+
+  perspective: 1200px;
+}
+
+/* Glass */
+
+.glass-tile {
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.2),
+    0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.doc-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #202020 #e2e2e2;
+}
+
+.doc-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.doc-scrollbar::-webkit-scrollbar-track {
+  background: #e2e2e2;
+  border-radius: 999px;
+}
+
+.doc-scrollbar::-webkit-scrollbar-thumb {
+  background: #202020;
+  border-radius: 999px;
+  border: 2px solid #e2e2e2;
+}
+
+html,
+body {
+ /* max-width: 100%;
+  overflow: hidden; */
+    min-height: 100vh;
+}
+
+.doc-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #202020 #ffffff;
+}
+
+.doc-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.doc-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.doc-scrollbar::-webkit-scrollbar-thumb {
+  background: #202020;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+}
+
+.support-editor:empty::before {
+  content: attr(data-placeholder);
+  color: rgba(32, 32, 32, 0.45);
+  pointer-events: none;
+}
+
+.support-editor ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+}
+
+.support-editor a {
+  color: #d95b00;
+  text-decoration: underline;
+}
+
+.search-highlight {
+  background: #fff1cc ;
+  outline: 1px solid #d95b00;
+  border-radius: 1px;
+  transition: all 0.2s ease;
+}
+/* Advayam Logo — subtle brightness/glow */
+.advayam-logo {
+  filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.18));
+}
+/* Advayam logo enhancement */
+/* =========================================================
+   ADVAYAM LOGO GLOW
+   ========================================================= */
+   .category-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #202020 #000000;
+}
+
+.category-scrollbar::-webkit-scrollbar {
+  height: 7px;
+}
+
+.category-scrollbar::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.category-scrollbar::-webkit-scrollbar-thumb {
+  background: #202020;
+  border-radius: 999px;
+}
+/* Program Index scrollbar */
+.index-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #202020 #000000;
+}
+
+.index-scrollbar::-webkit-scrollbar {
+  width: 7px;
+}
+
+.index-scrollbar::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 999px;
+}
+
+.index-scrollbar::-webkit-scrollbar-thumb {
+  background: #202020;
+  border-radius: 999px;
+}
+
+.index-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}

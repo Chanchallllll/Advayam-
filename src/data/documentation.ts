@@ -1,0 +1,348 @@
+export type DocSubItem = {
+  title: string;
+  href: string;
+};
+
+export type DocGroup = {
+  id: string;
+  title: string;
+  icon?: string;
+  defaultOpen?: boolean;
+  children?: DocSubItem[];
+};
+
+export type DocumentationDropdown = {
+  title: string;
+  lead?: string;
+  points: string[];
+};
+
+export const documentationGroups: DocGroup[] = [
+  {
+    id: "hardware",
+    title: "Hardware",
+    defaultOpen: true,
+    children: [
+      { title: "Microcontrollers", href: "#microcontrollers" },
+      { title: "Development Boards", href: "#development-boards" },
+      { title: "Board Pin Definitions", href: "#board-pin-definitions" },
+      { title: "Communication Modules", href: "#communication-modules" },
+    ],
+  },
+  {
+    id: "software",
+    title: "Software",
+    defaultOpen: false,
+    children: [
+      { title: "Advayam IDE", href: "#advayam-ide" },
+      { title: "VS Code Extension", href: "#vscode-extension" },
+      { title: "Simulators", href: "#simulators" },
+    ],
+  },
+  {
+    id: "products",
+    title: "Products",
+    defaultOpen: false,
+    children: [
+      { title: "Core Boards", href: "#core-boards" },
+      { title: "Base Boards", href: "#base-boards" },
+      { title: "Starter Kits", href: "#starter-kits" },
+    ],
+  },
+  {
+    id: "learn",
+    title: "Learn",
+    defaultOpen: false,
+    children: [
+      { title: "School Learning", href: "#school-learning" },
+      { title: "Undergraduate", href: "#undergraduate" },
+      { title: "Professional", href: "#professional" },
+    ],
+  },
+  {
+  id: "programming",
+  title: "Programming",
+  defaultOpen: false,
+  children: [
+    { title: "Arduino C", href: "#arduino-c" },
+    { title: "MicroPython", href: "#micropython" },
+    { title: "FreeRTOS", href: "#freertos" },
+  ],
+},
+{
+  id: "open-source",
+  title: "Open Source Software",
+  defaultOpen: false,
+  children: [
+    {
+      title: "Software Register",
+      href: "#open-source-software",
+    },
+  ],
+},
+];
+
+export const documentationSections = [
+  {
+    id: "microcontrollers",
+    number: "1.",
+    title: "Microcontrollers",
+    lead: "The brains of embedded systems.",
+    points: [
+      "ATmega328P",
+      "ATmega2560",
+      "ESP32",
+      "ESP32-S3",
+      "STM32",
+      "RP2040",
+    ],
+    note: "Learn → Architecture • GPIO • Timers • Interrupts • Memory",
+  },
+  {
+    id: "development-boards",
+    number: "2.",
+    title: "Development Boards",
+    lead: "Ready-to-use platforms for prototyping.",
+    points: [
+      "Arduino Uno",
+      "Arduino Nano",
+      "ESP32 DevKit",
+      "STM32 Nucleo",
+      "Raspberry Pi Pico",
+    ],
+    note: "Explore board layouts, pinouts, and use cases.",
+  },
+  {
+    id: "board-pin-definitions",
+    number: "2.1",
+    title: "Board Pin Definitions & Reference Mapping",
+    lead: "Pin function reference table defining UART, SPI, I²C, Digital, and PWM capabilities by pin number for supported development boards (ESP32 / Advayam Core Board).",
+    dropdowns: [
+      {
+        title: "Base Boards",
+        points: [
+          "UART (TX/RX): Serial data communication for terminal debugging and external devices.",
+          "SPI (SCK/MOSI/MISO/CS): High-speed synchronous serial interface for displays and sensors.",
+          "I²C (SDA/SCL): Two-wire serial protocol for connecting multiple peripherals on a shared bus.",
+          "Digital (GPIO): General-purpose input/output pins for digital state reading and control.",
+          "PWM: Pulse Width Modulation for LED brightness, motor speed, and tone output control.",
+          "GPIO1  | UART: TX   | SPI: —    | I2C: —   | Digital: ✓ | PWM: ✓ | ADC (Temp Sensor)",
+          "GPIO3  | UART: RX   | SPI: —    | I2C: —   | Digital: ✓ | PWM: ✓ | Serial Receiver",
+          "GPIO7  | UART: —    | SPI: —    | I2C: —   | Digital: ✓ | PWM: ✓ | 5x5 RGB Matrix Data",
+          "GPIO8  | UART: —    | SPI: —    | I2C: —   | Digital: ✓ | PWM: — | Touch Input Sensor",
+          "GPIO10 | UART: —    | SPI: CS   | I2C: —   | Digital: ✓ | PWM: ✓ | LSM6DSOX IMU CS",
+          "GPIO11 | UART: —    | SPI: MOSI | I2C: —   | Digital: ✓ | PWM: ✓ | LSM6DSOX IMU MOSI",
+          "GPIO12 | UART: —    | SPI: SCK  | I2C: —   | Digital: ✓ | PWM: ✓ | LSM6DSOX IMU SCK",
+          "GPIO13 | UART: —    | SPI: MISO | I2C: —   | Digital: ✓ | PWM: ✓ | LSM6DSOX IMU MISO",
+          "GPIO16 | UART: —    | SPI: —    | I2C: —   | Digital: ✓ | PWM: ✓ | Piezo Buzzer Output",
+          "GPIO17 | UART: —    | SPI: —    | I2C: —   | Digital: ✓ | PWM: — | User Push Button",
+          "GPIO18 | UART: —    | SPI: SCK  | I2C: —   | Digital: ✓ | PWM: ✓ | SPI Clock Default",
+          "GPIO21 | UART: —    | SPI: —    | I2C: SDA | Digital: ✓ | PWM: — | I2C Serial Data",
+          "GPIO22 | UART: —    | SPI: —    | I2C: SCL | Digital: ✓ | PWM: — | I2C Serial Clock",
+          "GPIO23 | UART: —    | SPI: MOSI | I2C: —   | Digital: ✓ | PWM: ✓ | SPI MOSI Default",
+          "GPIO38 | UART: —    | SPI: —    | I2C: —   | Digital: ✓ | PWM: — | IMU Interrupt Pin",
+          "GPIO45 | UART: —    | SPI: —    | I2C: —   | Digital: ✓ | PWM: ✓ | User Onboard LED",
+        ],
+      },
+      {
+        title: "RA4M1",
+        lead: "Advayam RA4M1 SK Pin Mapping\n\nPin function reference table defining UART, SPI, I2C, Digital, PWM, and ADC capabilities by pin number for the Advayam RA4M1 SK Development Board.",
+        points: [
+          "I2C (SDA/SCL): Two-wire serial protocol for connecting multiple peripherals on a shared bus.",
+          "PWM: Pulse Width Modulation for LED brightness, motor speed, servo control, and tone output.",
+          "ADC: Analog-to-Digital Converter input for reading analog sensor signals.",
+          "P205 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | LED Matrix",
+          "P300 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | SWCLK",
+          "P301 | UART: RX2 | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | UART2 Receiver",
+          "P302 | UART: TX2 | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | UART2 Transmitter",
+          "P303 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | PWM",
+          "P304 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | PWM",
+          "P400 | UART: — | SPI: — | I2C: SCL | Digital: ✓ | PWM: — | ADC: — | Display I2C Serial Clock",
+          "P401 | UART: — | SPI: — | I2C: SDA | Digital: ✓ | PWM: — | ADC: — | Display I2C Serial Data",
+          "P402 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | GPIO",
+          "P408 | UART: RX9 | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | UART9 Receiver",
+          "P409 | UART: TX9 | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | UART9 Transmitter",
+          "P410 | UART: RX0 | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | RS485",
+          "P411 | UART: TX0 | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | RS485",
+          "P501 | UART: TX1 | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | Wi-Fi",
+          "P502 | UART: RX1 | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | Wi-Fi",
+          "P014 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: ✓ | Analog",
+          "P000 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: ✓ | Analog",
+          "P001 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: ✓ | Analog",
+          "P002 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: ✓ | Analog",
+          "P003 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: ✓ | GPIO",
+          "P004 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: ✓ | GPIO",
+          "P011 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: ✓ | GPIO",
+          "P012 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: ✓ | GPIO",
+          "P013 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: ✓ | GPIO",
+          "P015 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: ✓ | GPIO",
+          "P100 | UART: — | SPI: — | I2C: SCL | Digital: ✓ | PWM: — | ADC: — | GPIO",
+          "P101 | UART: — | SPI: — | I2C: SDA | Digital: ✓ | PWM: — | ADC: — | GPIO",
+          "P102 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | PWM",
+          "P103 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | Digital GPIO",
+          "P104 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | Digital IRQ",
+          "P105 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | Digital IRQ",
+          "P106 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | Digital PWM",
+          "P107 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | PWM Digital",
+          "P108 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | ADC: — | SWDIO",
+          "P109 | UART: — | SPI: MOSI | I2C: — | Digital: ✓ | PWM: — | ADC: — | SPI MOSI",
+          "P110 | UART: — | SPI: MISO | I2C: — | Digital: ✓ | PWM: — | ADC: — | SPI MISO",
+          "P111 | UART: — | SPI: SCK | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | SPI SCK",
+          "P112 | UART: — | SPI: CS | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | SPI Chip Select",
+          "P113 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | GPIO PWM",
+        ],
+      },
+    ],
+    note: "All demo programs include full pin definition headers and board pin function mappings in their code comments.",
+  },
+  {
+    id: "communication-modules",
+    number: "3.",
+    title: "Communication Modules",
+    lead: "Enable devices to exchange data.",
+    points: ["Wi-Fi", "Bluetooth", "LoRa", "CAN Bus", "Ethernet"],
+    note: "Understand wired and wireless communication for embedded products.",
+  },
+  {
+    id: "advayam-ide",
+    number: "4.",
+    title: "Advayam IDE",
+    lead: "A unified development environment for Advayam boards.",
+    points: [
+      "Project setup",
+      "Build workflow",
+      "Board selection",
+      "Device monitor",
+    ],
+    note: "Designed for learning, prototyping, and deployment.",
+  },
+  {
+    id: "vscode-extension",
+    number: "5.",
+    title: "VS Code Extension",
+    lead: "Professional embedded development inside VS Code.",
+    points: [
+      "Project templates",
+      "Board manager",
+      "Build and upload",
+      "Documentation access",
+    ],
+    note: "Useful for students, makers, and product developers.",
+  },
+  {
+    id: "simulators",
+    number: "6.",
+    title: "Simulators",
+    lead: "Experiment before deploying to real hardware.",
+    points: [
+      "GPIO simulation",
+      "Sensor logic",
+      "Motor control",
+      "Protocol testing",
+    ],
+    note: "Reduces hardware dependency during early learning.",
+  },
+  {
+    id: "Advayam-boards",
+    number: "7.",
+    title: "Advayam Boards",
+    lead: "Advayam Boards and Advayam Shields",
+    points: ["Motor servo shield","Plant Sense Control Shield","Wi-Fi-Ethernet RS Communication Shield","Advayam ESP32 S3","Advayam ESP32S3 SK","Advayam RA4M1 SK","Advayam RP2354B sk","Advayam Thejas32 kicad1","Advayam Thejas32 kicad2","Starter Kit"],
+    note: "Suitable for education, IoT, robotics, and advanced embedded systems.",
+  },
+  {
+    id: "starter-kits",
+    number: "8.",
+    title: "Starter Kits",
+    lead: "Beginner-friendly learning bundles.",
+    points: [
+      "LED projects",
+      "Sensors",
+      "Motors",
+      "Displays",
+      "Connectivity examples",
+    ],
+    note: "Ideal for schools, colleges, and makers.",
+  },
+  {
+    id: "school-learning",
+    number: "9.",
+    title: "School Learning",
+    lead: "Logic building through interactive projects.",
+    points: [
+      "Blink LEDs",
+      "Sensor basics",
+      "Motor control",
+      "Smart traffic light",
+    ],
+    note: "Built for K-12 learning pathways.",
+  },
+  {
+    id: "undergraduate",
+    number: "10.",
+    title: "Undergraduate",
+    lead: "Industry-aligned embedded education.",
+    points: [
+      "GPIO programming",
+      "Communication protocols",
+      "IoT fundamentals",
+      "Robotics",
+    ],
+    note: "Supports academic projects and practical labs.",
+  },
+  {
+    id: "professional",
+    number: "13.",
+    title: "Professional",
+    lead: "Advanced workflows for product teams.",
+    points: ["RTOS firmware", "Testing", "Debugging", "Deployment workflows"],
+    note: "Useful for startups, engineers, and industrial developers.",
+  },
+  {
+    id: "arduino-c",
+    number: "14.",
+    title: "Arduino C",
+    lead: "Beginner-friendly embedded programming.",
+    points: [
+      "setup()",
+      "loop()",
+      "digitalWrite()",
+      "analogRead()",
+      "serial monitor",
+    ],
+    note: "A familiar starting point for embedded systems.",
+  },
+  {
+    id: "micropython",
+    number: "15.",
+    title: "MicroPython",
+    lead: "Python-based embedded programming.",
+    points: ["GPIO", "I2C", "SPI", "UART", "rapid prototyping"],
+    note: "Useful for fast experimentation and learning.",
+  },
+  {
+    id: "freertos",
+    number: "16.",
+    title: "FreeRTOS",
+    lead: "Real-time multitasking for embedded systems.",
+    points: ["Tasks", "Queues", "Semaphores", "Timers", "Scheduling"],
+    note: "Supports advanced firmware and industrial workflows.",
+  },
+  {
+  id: "open-source-software",
+  number: "17.",
+  title: "Open Source Software Register",
+  lead: "This is particularly relevant to Advayam. If your platform uses:",
+  points: [
+    "Linux",
+    "FreeRTOS",
+    "Zephyr",
+    "Rust libraries",
+    "MicroPython",
+    "Arduino libraries",
+    "Open-source drivers",
+    "Open-source AI models",
+  ],
+  note: "Where applicable, each open-source component should be documented with its name, version, applicable licence, modification status, and relevant distribution or attribution requirements. Advayam reviews the licensing terms of third-party software before incorporating it into products or commercial distributions.",
+},
+];

@@ -1,0 +1,1512 @@
+
+> advayam@0.1.0 build
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\USER\Desktop\Webyfy\advayam-official-website\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\USER\Desktop\Webyfy\advayam-official-website\advayam-frontend\package-lock.json
+
+▲ Next.js 16.2.9 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 109 errors:
+./advayam-frontend/src/app/about/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/admin/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/admin/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/admin/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/admin/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/admin/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/api/auth/route.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/api/contact/route.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/api/products/route.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/auth/callback/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/auth/callback/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/auth/callback/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/auth/callback/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/auth/callback/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/auth/forgot-password/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/auth/forgot-password/reset/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/auth/login/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/auth/register/complete/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/auth/register/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/auth/register/profile/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/community/contribution-guidelines/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/community/contributors/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/community/demo-programs/[id]/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/community/demo-programs/[id]/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/demo-programs/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/community/demo-programs/[id]/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/demo-programs/[id]/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/community/demo-programs/blink-led/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/community/demo-programs/blink-led/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/demo-programs/blink-led/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/community/demo-programs/blink-led/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/demo-programs/blink-led/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/community/demo-programs/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/community/mentors/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/community/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/community/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/community/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/contact/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/contact/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/contact/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/contact/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/contact/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/dashboard/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/dashboard/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/dashboard/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/dashboard/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/documentation/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/downloads/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/favicon.ico--route-entry.js
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/hardware/[slug]/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/hardware/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/hardware/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/hardware/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/hardware/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/hardware/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/layout.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/learningpath/makers/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/learningpath/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/learningpath/professionals/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/learningpath/students/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/learningpath/students/postgraduates/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/learningpath/students/school/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/learningpath/students/undergraduates/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/login/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/register/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/resources/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/shop/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/shop/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/shop/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/shop_available/cart/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/shop_available/favourites/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/shop_available/layout.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/shop_available/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/app/shop_available/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/app/shop_available/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Server Component]
+
+
+./advayam-frontend/src/app/software/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/software/vscode-extension/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/solutions/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/support/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/support/software-installation/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/app/support/ticket/page.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+
+./advayam-frontend/src/components/CommunityShowcase.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/CommunityShowcase.tsx
+    ./advayam-frontend/src/app/page.tsx
+
+
+./advayam-frontend/src/components/EcosystemOverview.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/EcosystemOverview.tsx
+    ./advayam-frontend/src/app/page.tsx
+
+
+./advayam-frontend/src/components/Footer.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Server Component:
+    ./advayam-frontend/src/components/Footer.tsx
+    ./advayam-frontend/src/app/login/page.tsx
+
+  Client Component Browser:
+    ./advayam-frontend/src/components/Footer.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/hardware/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/hardware/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/Footer.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/hardware/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/hardware/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/Header.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/Header.tsx
+    ./advayam-frontend/src/app/layout.tsx
+
+
+./advayam-frontend/src/components/Hero.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/Hero.tsx
+    ./advayam-frontend/src/app/page.tsx
+
+
+./advayam-frontend/src/components/HeroScrollBackground.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/HeroScrollBackground.tsx
+    ./advayam-frontend/src/app/page.tsx
+
+
+./advayam-frontend/src/components/LearningPathShowcase.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/LearningPathShowcase.tsx
+    ./advayam-frontend/src/app/page.tsx
+
+
+./advayam-frontend/src/components/ShopHeader.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/ShopHeader.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/ShopHeader.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/WhyAdvayam.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/WhyAdvayam.tsx
+    ./advayam-frontend/src/app/page.tsx
+
+
+./advayam-frontend/src/components/WireframeMesh.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/WireframeMesh.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/Hero.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/Hero.tsx [Server Component]
+    ./advayam-frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/WireframeMesh.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/Hero.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/Hero.tsx [Server Component]
+    ./advayam-frontend/src/app/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/auth/AuthHeader.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/auth/AuthHeader.tsx
+    ./advayam-frontend/src/app/auth/register/profile/page.tsx
+
+
+./advayam-frontend/src/components/auth/ForgotPasswordForm.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/auth/ForgotPasswordForm.tsx
+    ./advayam-frontend/src/app/auth/forgot-password/page.tsx
+
+
+./advayam-frontend/src/components/auth/LoginForm.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/auth/LoginForm.tsx
+    ./advayam-frontend/src/app/auth/login/page.tsx
+
+
+./advayam-frontend/src/components/auth/OTPInput.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/auth/OTPInput.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/auth/RegisterForm.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/auth/RegisterForm.tsx [Server Component]
+    ./advayam-frontend/src/app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/auth/OTPInput.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/auth/RegisterForm.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/auth/RegisterForm.tsx [Server Component]
+    ./advayam-frontend/src/app/auth/register/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/auth/ProfileDetailsForm.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/auth/ProfileDetailsForm.tsx
+    ./advayam-frontend/src/app/auth/register/profile/page.tsx
+
+
+./advayam-frontend/src/components/auth/RegisterComplete.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/auth/RegisterComplete.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/auth/RegisterComplete.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/auth/RegisterForm.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/auth/RegisterForm.tsx
+    ./advayam-frontend/src/app/auth/register/page.tsx
+
+
+./advayam-frontend/src/components/auth/RegisterStepper.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/auth/RegisterStepper.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/auth/RegisterComplete.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/auth/RegisterStepper.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/auth/RegisterComplete.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/auth/ResetPasswordForm.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/auth/ResetPasswordForm.tsx
+    ./advayam-frontend/src/app/auth/forgot-password/reset/page.tsx
+
+
+./advayam-frontend/src/components/auth/RoleSelector.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/auth/RoleSelector.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/auth/RegisterForm.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/auth/RegisterForm.tsx [Server Component]
+    ./advayam-frontend/src/app/auth/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/auth/RoleSelector.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/auth/RegisterForm.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/auth/RegisterForm.tsx [Server Component]
+    ./advayam-frontend/src/app/auth/register/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/auth/SocialLoginButton.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/auth/SocialLoginButton.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/auth/LoginForm.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/auth/LoginForm.tsx [Server Component]
+    ./advayam-frontend/src/app/auth/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/auth/SocialLoginButton.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/auth/LoginForm.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/auth/LoginForm.tsx [Server Component]
+    ./advayam-frontend/src/app/auth/login/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/community/CommunityHeader.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Server Component:
+    ./advayam-frontend/src/components/community/CommunityHeader.tsx
+    ./advayam-frontend/src/app/community/contribution-guidelines/page.tsx
+
+  Client Component Browser:
+    ./advayam-frontend/src/components/community/CommunityHeader.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/community/CommunityHeader.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/community/CommunityMembersPage.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/community/CommunityMembersPage.tsx
+    ./advayam-frontend/src/app/community/mentors/page.tsx
+
+
+./advayam-frontend/src/components/community/CommunitySection.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/community/CommunitySection.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/community/CommunitySection.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/community/PersonCard.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/community/PersonCard.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/community/CommunityMembersPage.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/community/CommunityMembersPage.tsx [Server Component]
+    ./advayam-frontend/src/app/community/mentors/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/community/PersonCard.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/community/CommunityMembersPage.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/community/CommunityMembersPage.tsx [Server Component]
+    ./advayam-frontend/src/app/community/mentors/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/documentation/DocumentationBranch.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/documentation/DocumentationBranch.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationTree.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationSidebar.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/documentation/DocumentationBranch.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationTree.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationSidebar.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/documentation/DocumentationContent.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/documentation/DocumentationContent.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/documentation/DocumentationContent.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/documentation/DocumentationHeader.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/documentation/DocumentationHeader.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/documentation/DocumentationHeader.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/documentation/DocumentationLayout.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx
+    ./advayam-frontend/src/app/documentation/page.tsx
+
+
+./advayam-frontend/src/components/documentation/DocumentationScrollFade.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/documentation/DocumentationScrollFade.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/documentation/DocumentationScrollFade.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/documentation/DocumentationSection.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/documentation/DocumentationSection.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationContent.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/documentation/DocumentationSection.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationContent.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/documentation/DocumentationSidebar.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/documentation/DocumentationSidebar.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/documentation/DocumentationSidebar.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/documentation/DocumentationTree.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/documentation/DocumentationTree.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationSidebar.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/documentation/DocumentationTree.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationSidebar.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/downloads/AdditionalDownloads.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/downloads/AdditionalDownloads.tsx
+    ./advayam-frontend/src/app/downloads/page.tsx
+
+
+./advayam-frontend/src/components/downloads/DownloadCard.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/downloads/DownloadCard.tsx
+    ./advayam-frontend/src/components/downloads/AdditionalDownloads.tsx
+    ./advayam-frontend/src/app/downloads/page.tsx
+
+
+./advayam-frontend/src/components/downloads/DownloadsHero.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/downloads/DownloadsHero.tsx
+    ./advayam-frontend/src/app/downloads/page.tsx
+
+
+./advayam-frontend/src/components/downloads/InstallationGuide.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/downloads/InstallationGuide.tsx
+    ./advayam-frontend/src/app/downloads/page.tsx
+
+
+./advayam-frontend/src/components/downloads/SystemRequirements.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/downloads/SystemRequirements.tsx
+    ./advayam-frontend/src/app/downloads/page.tsx
+
+
+./advayam-frontend/src/components/downloads/VersionHistory.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/downloads/VersionHistory.tsx
+    ./advayam-frontend/src/app/downloads/page.tsx
+
+
+./advayam-frontend/src/components/shop/ProductCard.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/shop/ProductCard.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/shop/ProductCard.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/shop/ProductFilters.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/shop/ProductFilters.ts [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/shop/ProductFilters.ts [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/shop/ProductGrid.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/shop/ProductGrid.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/shop/ProductGrid.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/favourites/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/shop/ShopAvailableHeader.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/shop/ShopAvailableHeader.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/shop/ShopAvailableHeader.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/shop/ShopSidebar.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/shop/ShopSidebar.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/shop/ShopSidebar.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/support/AttachmentCard.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/support/AttachmentCard.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/support/UploadBox.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/support/TicketForm.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/support/TicketForm.tsx [Server Component]
+    ./advayam-frontend/src/app/support/ticket/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/support/AttachmentCard.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/support/UploadBox.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/support/TicketForm.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/support/TicketForm.tsx [Server Component]
+    ./advayam-frontend/src/app/support/ticket/page.tsx [Server Component]
+
+
+./advayam-frontend/src/components/support/TicketForm.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/components/support/TicketForm.tsx
+    ./advayam-frontend/src/app/support/ticket/page.tsx
+
+
+./advayam-frontend/src/components/support/UploadBox.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/components/support/UploadBox.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/support/TicketForm.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/support/TicketForm.tsx [Server Component]
+    ./advayam-frontend/src/app/support/ticket/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/components/support/UploadBox.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/support/TicketForm.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/support/TicketForm.tsx [Server Component]
+    ./advayam-frontend/src/app/support/ticket/page.tsx [Server Component]
+
+
+./advayam-frontend/src/config/socials.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/config/socials.ts [Client Component Browser]
+    ./advayam-frontend/src/app/contact/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/contact/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/config/socials.ts [Client Component SSR]
+    ./advayam-frontend/src/app/contact/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/contact/page.tsx [Server Component]
+
+
+./advayam-frontend/src/context/AuthContext.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import trace:
+  Server Component:
+    ./advayam-frontend/src/context/AuthContext.tsx
+    ./advayam-frontend/src/app/layout.tsx
+
+
+./advayam-frontend/src/context/ShopContext.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Server Component:
+    ./advayam-frontend/src/context/ShopContext.tsx
+    ./advayam-frontend/src/app/shop_available/layout.tsx
+
+  Client Component Browser:
+    ./advayam-frontend/src/context/ShopContext.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/context/ShopContext.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/page.tsx [Server Component]
+
+
+./advayam-frontend/src/context/ToastContext.tsx
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Server Component:
+    ./advayam-frontend/src/context/ToastContext.tsx
+    ./advayam-frontend/src/app/layout.tsx
+
+  Client Component Browser:
+    ./advayam-frontend/src/context/ToastContext.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/Footer.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/context/ToastContext.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/Footer.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Server Component]
+
+
+./advayam-frontend/src/data/allDemoPrograms.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/data/allDemoPrograms.ts [Client Component Browser]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/data/allDemoPrograms.ts [Client Component SSR]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/demo-programs/page.tsx [Server Component]
+
+
+./advayam-frontend/src/data/community.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Server Component:
+    ./advayam-frontend/src/data/community.ts
+    ./advayam-frontend/src/app/community/mentors/page.tsx
+
+  Client Component Browser:
+    ./advayam-frontend/src/data/community.ts [Client Component Browser]
+    ./advayam-frontend/src/app/community/demo-programs/[id]/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/community/demo-programs/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/data/community.ts [Client Component SSR]
+    ./advayam-frontend/src/app/community/demo-programs/[id]/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/community/demo-programs/[id]/page.tsx [Server Component]
+
+
+./advayam-frontend/src/data/documentation.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/data/documentation.ts [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationContent.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/data/documentation.ts [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationContent.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/documentation/DocumentationLayout.tsx [Server Component]
+    ./advayam-frontend/src/app/documentation/page.tsx [Server Component]
+
+
+./advayam-frontend/src/data/downloads.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Server Component:
+    ./advayam-frontend/src/data/downloads.ts
+    ./advayam-frontend/src/components/downloads/SystemRequirements.tsx
+    ./advayam-frontend/src/app/downloads/page.tsx
+
+  Client Component Browser:
+    ./advayam-frontend/src/data/downloads.ts [Client Component Browser]
+    ./advayam-frontend/src/components/downloads/DownloadsHero.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/downloads/DownloadsHero.tsx [Server Component]
+    ./advayam-frontend/src/app/downloads/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/data/downloads.ts [Client Component SSR]
+    ./advayam-frontend/src/components/downloads/DownloadsHero.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/downloads/DownloadsHero.tsx [Server Component]
+    ./advayam-frontend/src/app/downloads/page.tsx [Server Component]
+
+
+./advayam-frontend/src/data/products.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/data/products.ts [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/data/products.ts [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/shop_available/cart/page.tsx [Server Component]
+
+
+./advayam-frontend/src/lib/api.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/lib/api.ts [Client Component Browser]
+    ./advayam-frontend/src/context/AuthContext.tsx [Client Component Browser]
+    ./advayam-frontend/src/context/AuthContext.tsx [Server Component]
+    ./advayam-frontend/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/lib/api.ts [Client Component SSR]
+    ./advayam-frontend/src/context/AuthContext.tsx [Client Component SSR]
+    ./advayam-frontend/src/context/AuthContext.tsx [Server Component]
+    ./advayam-frontend/src/app/layout.tsx [Server Component]
+
+
+./advayam-frontend/src/lib/cookies.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component SSR:
+    ./advayam-frontend/src/lib/cookies.ts [Client Component SSR]
+    ./advayam-frontend/src/context/AuthContext.tsx [Client Component SSR]
+    ./advayam-frontend/src/context/AuthContext.tsx [Server Component]
+    ./advayam-frontend/src/app/layout.tsx [Server Component]
+
+  Client Component Browser:
+    ./advayam-frontend/src/lib/cookies.ts [Client Component Browser]
+    ./advayam-frontend/src/lib/api.ts [Client Component Browser]
+    ./advayam-frontend/src/components/Footer.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/Footer.tsx [Server Component]
+    ./advayam-frontend/src/app/learningpath/page.tsx [Server Component]
+
+
+./advayam-frontend/src/lib/siteSearch.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/lib/siteSearch.ts [Client Component Browser]
+    ./advayam-frontend/src/components/Header.tsx [Client Component Browser]
+    ./advayam-frontend/src/components/Header.tsx [Server Component]
+    ./advayam-frontend/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/lib/siteSearch.ts [Client Component SSR]
+    ./advayam-frontend/src/components/Header.tsx [Client Component SSR]
+    ./advayam-frontend/src/components/Header.tsx [Server Component]
+    ./advayam-frontend/src/app/layout.tsx [Server Component]
+
+
+./advayam-frontend/src/lib/validation.ts
+Specified module format (CommonJs) is not matching the module format of the source code (EcmaScript Modules)
+The CommonJs module format was specified in the package.json that is affecting this source file or by using an special extension, but Ecmascript import/export syntax is used in the source code.
+The module was automatically converted to an EcmaScript module, but that is in conflict with the specified module format. Either change the "type" field in the package.json or replace EcmaScript import/export syntax with CommonJs syntas in the source file.
+In some cases EcmaScript import/export syntax is added by an transform and isn't actually part of the source code. In these cases revisit transformation options to inject the correct syntax.
+
+Import traces:
+  Client Component Browser:
+    ./advayam-frontend/src/lib/validation.ts [Client Component Browser]
+    ./advayam-frontend/src/components/auth/RegisterComplete.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Client Component Browser]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./advayam-frontend/src/lib/validation.ts [Client Component SSR]
+    ./advayam-frontend/src/components/auth/RegisterComplete.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Client Component SSR]
+    ./advayam-frontend/src/app/auth/register/complete/page.tsx [Server Component]
+
+
+    at ignore-listed frames

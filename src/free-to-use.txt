@@ -1,0 +1,9 @@
+Adavyam IDE
+
+Free developer environment for modern software development.
+
+[ Download for Windows ] [ Download for Linux ]
+
+Free to use • MIT License • Third-party notices included
+
+License & Legal
