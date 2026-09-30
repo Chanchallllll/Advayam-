@@ -47,7 +47,7 @@ export default function DocumentationTree({
       {/* CHILDREN */}
       {isOpen && group.children && (
         <div className="relative ml-2 mt-3 h-[128px]">
-          <DocumentationBranch />
+          <DocumentationBranch itemCount={group.children.length} />
 
           <div className="absolute left-10 top-[8px] flex h-[104px] flex-col justify-between">
             {group.children.map((child) => (

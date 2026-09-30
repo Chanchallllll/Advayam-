@@ -38,6 +38,10 @@ export default function CommunityShowcase() {
           Get Advayam Now
         </a>
 
+        <p className="font-jakarta mt-4 text-base font-bold text-white">
+          Open source for curious minds.
+        </p>
+
         <div className="mt-12 flex max-w-4xl flex-wrap justify-center gap-3.5">
           {features.map((feature) => (
             <span

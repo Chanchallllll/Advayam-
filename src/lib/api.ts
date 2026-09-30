@@ -1,14 +1,15 @@
 import { getCookie } from "./cookies";
 
-const BASE_URL =
+export const API_BASE_URL = (
   process.env.NEXT_PUBLIC_API_URL ||
-  "https://advayam-official-website-1.onrender.com";
+  "https://advayam-official-website-1.onrender.com"
+).replace(/\/+$/, "");
 
 export async function apiFetch<T = any>(
   path: string,
   options: RequestInit = {}
 ): Promise<T> {
-  const url = `${BASE_URL}/${path.replace(/^\/+/, "")}`;
+  const url = `${API_BASE_URL}/${path.replace(/^\/+/, "")}`;
 
   // Get token from cookie (SSO) or localStorage/sessionStorage
   let token: string | null = null;

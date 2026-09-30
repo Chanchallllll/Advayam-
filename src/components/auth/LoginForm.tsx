@@ -10,7 +10,7 @@ import RoleSelector from "./RoleSelector";
 import SocialLoginButton from "./SocialLoginButton";
 import { isValidEmail } from "@/lib/validation";
 import { useAuth } from "@/context/AuthContext";
-import { apiFetch } from "@/lib/api";
+import { API_BASE_URL, apiFetch } from "@/lib/api";
 
 export default function LoginForm() {
   const { login } = useAuth();
@@ -92,13 +92,11 @@ export default function LoginForm() {
   }
 
   function continueWithGoogle() {
-    const backendUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
-    window.location.href = `${backendUrl}/auth/google`;
+    window.location.href = `${API_BASE_URL}/auth/google`;
   }
 
   function continueWithGithub() {
-    const backendUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
-    window.location.href = `${backendUrl}/auth/github`;
+    window.location.href = `${API_BASE_URL}/auth/github`;
   }
 
   const loginDisabled = !email.trim() || !password.trim();

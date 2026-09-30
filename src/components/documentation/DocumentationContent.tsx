@@ -1,7 +1,12 @@
+import { Fragment } from "react";
+import { useState } from "react";
 import { documentationSections } from "@/data/documentation";
 import DocumentationSection from "./DocumentationSection";
+import ProjectShowcase from "./ProjectShowcase";
 
 export default function DocumentationContent() {
+  const [openDropdownId, setOpenDropdownId] = useState<string | null>(null);
+
   return (
     <article className="mx-auto max-w-4xl bg-[#0c0c0c] pb-32 pt-8 sm:pt-10">
 
@@ -22,10 +27,18 @@ export default function DocumentationContent() {
 
       <div className="mt-8 space-y-14 sm:mt-10 sm:space-y-16">
         {documentationSections.map((section) => (
-          <DocumentationSection
-            key={section.id}
-            {...section}
-          />
+          <Fragment key={section.id}>
+            <DocumentationSection
+              {...section}
+              openDropdownId={openDropdownId}
+              onDropdownToggle={(dropdownId) =>
+                setOpenDropdownId((current) =>
+                  current === dropdownId ? null : dropdownId,
+                )
+              }
+            />
+            {section.id === "professional" && <ProjectShowcase />}
+          </Fragment>
         ))}
       </div>
     </article>

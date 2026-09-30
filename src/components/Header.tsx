@@ -172,6 +172,10 @@ export default function Header() {
               <a href="/downloads">
                 Downloads
               </a>
+
+              <a href="/documentation#projects">
+                Projects
+              </a>
             </Dropdown>
 
             {/* TARGET AUDIENCE */}
@@ -222,19 +226,12 @@ export default function Header() {
                 </button>
               </Dropdown>
             ) : (
-              <div className="flex items-center gap-2">
+              <div className="flex items-center">
                 <a
                   href="/auth/login"
-                  className="flex h-10 items-center justify-center whitespace-nowrap rounded-full px-4 text-xs font-extrabold text-white/90 transition-all hover:bg-white/10 hover:text-[#EA580C]"
-                >
-                  Login
-                </a>
-
-                <a
-                  href="/auth/register"
                   className="flex h-10 items-center justify-center whitespace-nowrap rounded-full bg-gradient-to-r from-[#EA580C] to-[#F97316] px-5 text-xs font-extrabold text-white shadow-md shadow-orange-500/25 transition-all hover:scale-[1.03] active:scale-[0.98]"
                 >
-                  Register
+                  Login
                 </a>
               </div>
             )}
@@ -332,6 +329,14 @@ export default function Header() {
                 Downloads
               </a>
 
+              <a
+                href="/documentation#projects"
+                onClick={closeMobileMenu}
+                className="rounded-xl px-3 py-3 transition-colors hover:bg-white/10"
+              >
+                Projects
+              </a>
+
               {/* TARGET AUDIENCE */}
               <a
                 href="/learningpath"
@@ -375,23 +380,12 @@ export default function Header() {
                 </>
               ) : (
                 <div className="mt-2 grid gap-2 border-t border-white/10 pt-3">
-
-                  {/* LOGIN */}
                   <a
                     href="/auth/login"
                     onClick={closeMobileMenu}
-                    className="flex h-11 items-center justify-center rounded-full border border-white/20 bg-white/[0.06] text-sm font-bold transition-colors hover:bg-white/10"
-                  >
-                    Login
-                  </a>
-
-                  {/* REGISTER */}
-                  <a
-                    href="/auth/register"
-                    onClick={closeMobileMenu}
                     className="flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-[#EA580C] to-[#F97316] text-sm font-bold text-white transition-all hover:scale-[1.01] active:scale-[0.98]"
                   >
-                    Register
+                    Login
                   </a>
                 </div>
               )}

@@ -60,6 +60,15 @@ export const documentationGroups: DocGroup[] = [
     ],
   },
   {
+    id: "projects",
+    title: "Projects",
+    defaultOpen: false,
+    children: [
+      { title: "Featured Projects", href: "#projects" },
+      { title: "Boards Compatible", href: "#boards-compatible" },
+    ],
+  },
+  {
   id: "programming",
   title: "Programming",
   defaultOpen: false,
@@ -192,6 +201,33 @@ export const documentationSections = [
           "P113 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | ADC: — | GPIO PWM",
         ],
       },
+      {
+        title: "RP2354B",
+        lead: "Pin function reference table defining UART, SPI, I²C, Digital, and PWM capabilities by pin number for supported development boards (ESP32 / Advayam Core Board).",
+        points: [
+          "UART (TX/RX): Serial data communication for terminal debugging and external devices.",
+          "SPI (SCK/MOSI/MISO/CS): High-speed synchronous serial protocol for displays and sensors.",
+          "I²C (SDA/SCL): Two-wire serial protocol for connecting multiple peripherals on a shared bus.",
+          "Digital (GPIO): General-purpose input/output pins for digital state reading and control.",
+          "PWM: Pulse Width Modulation for LED brightness, motor speed, and tone output control.",
+          "GPIO1 | UART: TX | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | ADC (Temp Sensor)",
+          "GPIO3 | UART: RX | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | Serial Receiver",
+          "GPIO7 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | 5x5 RGB Matrix Data",
+          "GPIO8 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | Touch Input Sensor",
+          "GPIO10 | UART: — | SPI: CS | I2C: — | Digital: ✓ | PWM: ✓ | LSM6DSOX IMU CS",
+          "GPIO11 | UART: — | SPI: MOSI | I2C: — | Digital: ✓ | PWM: ✓ | LSM6DSOX IMU MOSI",
+          "GPIO12 | UART: — | SPI: SCK | I2C: — | Digital: ✓ | PWM: ✓ | LSM6DSOX IMU SCK",
+          "GPIO13 | UART: — | SPI: MISO | I2C: — | Digital: ✓ | PWM: ✓ | LSM6DSOX IMU MISO",
+          "GPIO16 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | Piezo Buzzer Output",
+          "GPIO17 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | User Push Button",
+          "GPIO18 | UART: — | SPI: SCK | I2C: — | Digital: ✓ | PWM: ✓ | SPI Clock Default",
+          "GPIO21 | UART: — | SPI: — | I2C: SDA | Digital: ✓ | PWM: — | I2C Serial Data",
+          "GPIO22 | UART: — | SPI: — | I2C: SCL | Digital: ✓ | PWM: — | I2C Serial Clock",
+          "GPIO23 | UART: — | SPI: MOSI | I2C: — | Digital: ✓ | PWM: ✓ | SPI MOSI Default",
+          "GPIO38 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: — | IMU Interrupt Pin",
+          "GPIO45 | UART: — | SPI: — | I2C: — | Digital: ✓ | PWM: ✓ | User Onboard LED",
+        ],
+      },
     ],
     note: "All demo programs include full pin definition headers and board pin function mappings in their code comments.",
   },
@@ -292,7 +328,7 @@ export const documentationSections = [
   },
   {
     id: "professional",
-    number: "13.",
+    number: "11.",
     title: "Professional",
     lead: "Advanced workflows for product teams.",
     points: ["RTOS firmware", "Testing", "Debugging", "Deployment workflows"],
@@ -300,7 +336,7 @@ export const documentationSections = [
   },
   {
     id: "arduino-c",
-    number: "14.",
+    number: "13.",
     title: "Arduino C",
     lead: "Beginner-friendly embedded programming.",
     points: [
@@ -314,7 +350,7 @@ export const documentationSections = [
   },
   {
     id: "micropython",
-    number: "15.",
+    number: "14.",
     title: "MicroPython",
     lead: "Python-based embedded programming.",
     points: ["GPIO", "I2C", "SPI", "UART", "rapid prototyping"],
@@ -322,7 +358,7 @@ export const documentationSections = [
   },
   {
     id: "freertos",
-    number: "16.",
+    number: "15.",
     title: "FreeRTOS",
     lead: "Real-time multitasking for embedded systems.",
     points: ["Tasks", "Queues", "Semaphores", "Timers", "Scheduling"],
@@ -330,7 +366,7 @@ export const documentationSections = [
   },
   {
   id: "open-source-software",
-  number: "17.",
+    number: "16.",
   title: "Open Source Software Register",
   lead: "This is particularly relevant to Advayam. If your platform uses:",
   points: [

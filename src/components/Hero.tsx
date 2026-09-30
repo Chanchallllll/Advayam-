@@ -5,15 +5,159 @@ import { Cpu, Zap, Wifi } from "lucide-react";
 import { FaWindows } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
 import WireframeMesh from "@/components/WireframeMesh";
+import thejas32Kicad2Image from "../../Board_Images/AdvayamThejas32_kicad2.png";
+import thejas32Kicad1Image from "../../Board_Images/AdvayamThejas32_kicad1.png";
+import esp32S3Image from "../../Board_Images/Advayam_ESP32_S3.png";
+import starterKitImage from "../../Board_Images/starterkit.png";
+import esp32S3SKImage from "../../Board_Images/advayam_ESP32S3_SK.png";
+import ra4m1SKImage from "../../Board_Images/Advayam_RA4M1_SK.png";
+import rp2354BSKImage from "../../Board_Images/Advayam_RP2354B_sk.png";
+import rp2354BSK2Image from "../../Board_Images/RP2354B_sk2 (1).png";
+import wifiShieldImage from "../../Shield images/Wifi_Ethernet_RS_new (1).png";
+import plantSenseShieldImage from "../../Shield images/plantSenseControl_Shield (1).png";
+import motorServoShieldImage from "../../Shield images/Motor_servo_shield (1).png";
 
 const slides = [
+  {
+    id: "thejas32-sk-kicad2",
+    eyebrow: "Thejas32 Expansion",
+    title: "Advayam Thejas32 SK",
+    description:
+      "A multifunctional Arduino shield compatible board, made with an Indian processor, featuring an LED matrix, touch sensor, temperature and humidity sensor, pressure sensor, inertial sensor, and buzzer. It also provides a USB interface, GPIO headers, onboard controls, and an integrated wireless module for embedded development.",
+    image: thejas32Kicad2Image.src,
+    alt: "Advayam Thejas32 SK expansion board",
+    label: "Advayam Thejas32 SK",
+    note: "Sensors & Interfaces",
+    tags: [
+      { icon: Cpu, label: "Integrated Sensors" },
+      { icon: Zap, label: "LED Matrix" },
+      { icon: Wifi, label: "Wireless Communication" },
+      { icon: Cpu, label: "Arduino Compatible Board" },
+    ],
+  },
+  {
+    id: "thejas32-sk-kicad1",
+    eyebrow: "Thejas32 Expansion",
+    title: "Advayam Thejas32 SK",
+    description:
+      "A multifunctional Arduino shield compatible board, made with an Indian processor, featuring an LED matrix, touch sensor, temperature and humidity sensor, pressure sensor, inertial sensor, and buzzer. It also provides a USB interface, GPIO headers, onboard controls, and an integrated wireless module for embedded development.",
+    image: thejas32Kicad1Image.src,
+    alt: "Advayam Thejas32 SK alternate board view",
+    label: "Advayam Thejas32 SK",
+    note: "Sensors & Interfaces",
+    tags: [
+      { icon: Cpu, label: "Integrated Sensors" },
+      { icon: Zap, label: "LED Matrix" },
+      { icon: Wifi, label: "Wireless Communication" },
+      { icon: Cpu, label: "Arduino Compatible Board" },
+    ],
+  },
+  {
+    id: "esp32-s3",
+    eyebrow: "Wireless Development",
+    title: "Advayam Baseboard",
+    description:
+      "An ESP32 Baseboard for connected embedded applications, with wireless capability, USB connectivity, and accessible expansion interfaces, which is the plug-in board for the Advayam Explorer Starter Kit.",
+    image: esp32S3Image.src,
+    alt: "Advayam Baseboard",
+    label: "Advayam Baseboard",
+    note: "Connected Prototyping",
+    tags: [
+      { icon: Wifi, label: "Wireless Connectivity" },
+      { icon: Cpu, label: "GPIO Expansion" },
+      { icon: Zap, label: "USB Interface" },
+    ],
+  },
+  {
+    id: "starter-kit",
+    eyebrow: "Explorer Starter Kit",
+    title: "Advayam Explorer Starter Kit",
+    description:
+      "A feature-rich learning kit integrating an LED matrix, microphone, touch interface, sensors, buttons, buzzer, and USB connectivity.",
+    image: starterKitImage.src,
+    alt: "Advayam Explorer Starter Kit",
+    label: "Advayam Explorer Starter Kit",
+    note: "All-in-One Learning",
+    tags: [
+      { icon: Cpu, label: "Multiple Sensors" },
+      { icon: Zap, label: "USB Connectivity" },
+      { icon: Wifi, label: "Hands-on Learning" },
+    ],
+  },
+  {
+    id: "esp32-s3-sk",
+    eyebrow: "Wireless Development",
+    title: "Advayam Starter Kit",
+    description:
+      "An Advayam Starter Kit board for prototyping, with an LED matrix, wireless connectivity, USB interface, GPIO expansion, onboard sensors, and user controls.",
+    image: esp32S3SKImage.src,
+    alt: "Advayam Starter Kit",
+    label: "Advayam Starter Kit",
+    note: "Connected Prototyping",
+    tags: [
+      { icon: Wifi, label: "Wireless Connectivity" },
+      { icon: Cpu, label: "GPIO Expansion" },
+      { icon: Zap, label: "Onboard Controls" },
+    ],
+  },
+  {
+    id: "ra4m1-sk",
+    eyebrow: "Microcontroller Board",
+    title: "Advayam RA4M1 SK",
+    description:
+      "A microcontroller development board which is Arduino Shield Compatible with GPIO, analog, digital, and expansion interfaces for embedded applications.",
+    image: ra4m1SKImage.src,
+    alt: "Advayam RA4M1 SK development board",
+    label: "Advayam RA4M1 SK",
+    note: "Embedded Applications",
+    tags: [
+      { icon: Cpu, label: "RA4M1 MCU" },
+      { icon: Zap, label: "Analog & Digital I/O" },
+      { icon: Wifi, label: "Expansion Interfaces" },
+      { icon: Cpu, label: "Arduino Shield Compatible" },
+    ],
+  },
+  {
+    id: "rp2354b-sk-1",
+    eyebrow: "RP2354B Development",
+    title: "Advayam RP2354B SK",
+    description:
+      "An RP2354B development board which is Arduino shield compatible with USB connectivity, GPIO headers, power input, onboard debugging interfaces, an LED matrix, touch sensor, temperature and humidity sensor, pressure sensor, inertial sensor, and buzzer.",
+    image: rp2354BSKImage.src,
+    alt: "Advayam RP2354B SK development board",
+    label: "Advayam RP2354B SK",
+    note: "USB & Debug Ready",
+    tags: [
+      { icon: Cpu, label: "RP2354B MCU" },
+      { icon: Zap, label: "GPIO Headers" },
+      { icon: Wifi, label: "Debug Interfaces" },
+      { icon: Cpu, label: "Arduino Shield Compatible" },
+    ],
+  },
+  {
+    id: "rp2354b-sk-2",
+    eyebrow: "RP2354B Development",
+    title: "Advayam RP2354B SK",
+    description:
+      "An RP2354B development board which is Arduino shield compatible with USB connectivity, GPIO headers, power input, onboard debugging interfaces, an LED matrix, touch sensor, temperature and humidity sensor, pressure sensor, inertial sensor, and buzzer.",
+    image: rp2354BSK2Image.src,
+    alt: "Advayam RP2354B SK alternate board view",
+    label: "Advayam RP2354B SK",
+    note: "USB & Debug Ready",
+    tags: [
+      { icon: Cpu, label: "RP2354B MCU" },
+      { icon: Zap, label: "GPIO Headers" },
+      { icon: Wifi, label: "Debug Interfaces" },
+      { icon: Cpu, label: "Arduino Shield Compatible" },
+    ],
+  },
   {
     id: "wifi-shield",
     eyebrow: "Communication Shield",
     title: "Wi‑Fi / Ethernet RS Communication Shield",
     description:
       "A communication-focused expansion shield designed for network and serial connectivity, supporting Wi-Fi, Ethernet, and RS interfaces for connected embedded applications.",
-    image: "/hero-shields/wifi-ethernet-rs-shield.png",
+    image: wifiShieldImage.src,
     alt: "Wi‑Fi Ethernet RS Communication Shield",
     label: "Wireless Communication Shield",
     note: "Industrial Connectivity",
@@ -28,8 +172,8 @@ const slides = [
     eyebrow: "PlantSense Shield",
     title: "PlantSense Control Shield",
     description:
-      "A control and monitoring shield designed for PlantSense applications, featuring an onboard display and multiple interface connections for sensor-based systems.",
-    image: "/hero-shields/plantsense-control-shield.png",
+      "A control and monitoring shield designed for PlantSense applications, featuring an onboard display and multiple interface connections for sensor-based systems. An alternate view of the shield is used in automated plant-monitoring and irrigation systems.",
+    image: plantSenseShieldImage.src,
     alt: "PlantSense Control Shield",
     label: "PlantSense Control Shield",
     note: "Sensor & Display Ready",
@@ -45,7 +189,7 @@ const slides = [
     title: "Motor & Servo Shield",
     description:
       "A dedicated motor and servo control shield providing multiple driver channels and interface connections for robotics, motion control, and automation projects.",
-    image: "/hero-shields/motor-servo-shield.png",
+    image: motorServoShieldImage.src,
     alt: "Motor & Servo Shield",
     label: "Motor & Servo Shield",
     note: "Automation & Robotics",
@@ -53,118 +197,6 @@ const slides = [
       { icon: Zap, label: "Multiple Drivers" },
       { icon: Cpu, label: "Servo Control" },
       { icon: Wifi, label: "Automation Interfaces" },
-    ],
-  },
-  {
-    id: "explorer-board",
-    eyebrow: "Explorer Platform",
-    title: "Advayam Explorer Board",
-    description:
-      "Compact development board featuring a USB interface, GPIO headers, onboard controls, and an integrated wireless module.",
-    image: "/boards/AdvayamThejas32_kicad1-removebg-preview.png",
-    alt: "Advayam Explorer Board",
-    label: "Advayam Explorer Board",
-    note: "Wireless Development",
-    tags: [
-      { icon: Wifi, label: "Wireless Module" },
-      { icon: Cpu, label: "GPIO Headers" },
-      { icon: Zap, label: "USB Interface" },
-    ],
-  },
-  {
-    id: "explorer-shield",
-    eyebrow: "Explorer Expansion",
-    title: "Advayam Explorer Shield",
-    description:
-      "Multifunctional expansion shield featuring an LED matrix, microphone, touch sensor, temperature sensor, inertial sensor, and buzzer.",
-    image: "/boards/AdvayamThejas32_kicad2-removebg-preview.png",
-    alt: "Advayam Explorer Shield",
-    label: "Advayam Explorer Shield",
-    note: "Sensors & Interfaces",
-    tags: [
-      { icon: Cpu, label: "Integrated Sensors" },
-      { icon: Zap, label: "LED Matrix" },
-      { icon: Wifi, label: "Expansion Ready" },
-    ],
-  },
-  {
-    id: "explorer-starter-kit",
-    eyebrow: "Explorer Starter Kit",
-    title: "Advayam Explorer Starter Kit",
-    description:
-      "Feature-rich development board integrating an LED matrix, microphone, touch interface, sensors, buttons, buzzer, and USB connectivity.",
-    image: "/boards/starterkit-removebg-preview.png",
-    alt: "Advayam Explorer Starter Kit",
-    label: "Advayam Explorer Starter Kit",
-    note: "All-in-One Learning",
-    tags: [
-      { icon: Cpu, label: "Multiple Sensors" },
-      { icon: Zap, label: "USB Connectivity" },
-      { icon: Wifi, label: "Hands-on Learning" },
-    ],
-  },
-  {
-    id: "ra4m1-sk",
-    eyebrow: "Microcontroller Board",
-    title: "Advayam RA4M1-SK",
-    description:
-      "Microcontroller development board providing extensive GPIO, analog, digital, and expansion interfaces for embedded applications.",
-    image: "/boards/Advayam_RA4M1_SK-removebg-preview.png",
-    alt: "Advayam RA4M1-SK",
-    label: "Advayam RA4M1-SK",
-    note: "Embedded Applications",
-    tags: [
-      { icon: Cpu, label: "RA4M1 MCU" },
-      { icon: Zap, label: "Analog & Digital" },
-      { icon: Wifi, label: "Expansion Interfaces" },
-    ],
-  },
-  {
-    id: "rp2354b-sk-front",
-    eyebrow: "RP2354B Development",
-    title: "Advayam RP2354B-SK Front",
-    description:
-      "RP2354B-based development board with USB connectivity, GPIO headers, power input, and onboard debugging interfaces.",
-    image: "/boards/Advayam_RP2354B_sk-removebg-preview.png",
-    alt: "Advayam RP2354B-SK front view",
-    label: "Advayam RP2354B-SK Front",
-    note: "USB & Debug Ready",
-    tags: [
-      { icon: Cpu, label: "RP2354B" },
-      { icon: Zap, label: "GPIO Headers" },
-      { icon: Wifi, label: "Debug Interfaces" },
-    ],
-  },
-  {
-    id: "rp2354b-sk-back",
-    eyebrow: "RP2354B Development",
-    title: "Advayam RP2354B-SK Back",
-    description:
-      "Rear view of the RP2354B development board showing its supporting circuitry, connectors, and accessible expansion headers.",
-    image: "/boards/Advayam_ESP32_S3-removebg-preview.png",
-    alt: "Advayam RP2354B-SK rear view",
-    label: "Advayam RP2354B-SK Back",
-    note: "Expansion Access",
-    tags: [
-      { icon: Cpu, label: "Supporting Circuitry" },
-      { icon: Zap, label: "Accessible Headers" },
-      { icon: Wifi, label: "Connectors" },
-    ],
-  },
-  {
-    id: "esp32-s2-sk",
-    eyebrow: "Wireless Development",
-    title: "Advayam ESP32-S2-SK",
-    description:
-      "ESP32-S2 development board featuring wireless connectivity, USB interface, GPIO expansion, onboard sensors, and user controls.",
-    image: "/boards/advayam_ESP32S3_SK-removebg-preview.png",
-    alt: "Advayam ESP32-S2-SK",
-    label: "Advayam ESP32-S2-SK",
-    note: "Connected Prototyping",
-    tags: [
-      { icon: Wifi, label: "Wireless Connectivity" },
-      { icon: Cpu, label: "GPIO Expansion" },
-      { icon: Zap, label: "USB Interface" },
     ],
   },
 ];
@@ -191,22 +223,27 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto max-w-6xl translate-y-6">
         {/* Webyfy IoT Management Badge */}
-        <a
-          href="https://www.webyfy.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 rounded-full bg-[#07053d] border border-white/20 px-6 py-2.5 backdrop-blur-md transition-all hover:bg-white/15 hover:border-white/30 shadow-lg"
-        >
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-300">
-            Designed and Managed By
-          </span>
+        <div className="-translate-y-3">
+          <a
+            href="https://www.webyfy.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 rounded-full bg-[#07053d] border border-white/20 px-6 py-2.5 backdrop-blur-md transition-all hover:bg-white/15 hover:border-white/30 shadow-lg"
+          >
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-300">
+              Designed and Managed By
+            </span>
 
-          <img
-            src="/logos/webyfy-logo.svg"
-            alt="Webyfy IoT"
-            className="h-7 md:h-8 w-auto object-contain"
-          />
-        </a>
+            <img
+              src="/logos/webyfy-logo.svg"
+              alt="Webyfy IoT"
+              className="h-7 md:h-8 w-auto object-contain"
+            />
+          </a>
+          <p className="font-jakarta mt-4 text-lg font-extrabold text-white">
+            Open source for curious minds.
+          </p>
+        </div>
 
         <h1 className="font-druk text-[5rem] leading-none tracking-[0.08em] text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.8)] md:text-[7rem] lg:text-[9rem] mt-6">
           ADVAYAM
